@@ -35,7 +35,7 @@ A **testbench** was created for functional verification, and the design was simu
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/8-bit-ALU-Verilog.git
+git clone https://github.com/Muhad33/8-bit-ALU-Verilog.git
 cd 8-bit-ALU-Verilog/src
 ```
 
@@ -50,16 +50,25 @@ tb_alu.v → Testbench
 3.Run the simulation and observe the waveforms.
 
 ## 🧮 ALU Operations
-| Opcode | Operation | Description |
-| ------ | --------- | ----------- |
-| `000`  | ADD       | `A + B`     |
-| `001`  | SUB       | `A - B`     |
-| `010`  | AND       | `A & B`     |
-| `011`  | OR        | `A \| B`    |
-| `100`  | XOR       | `A ^ B`     |
-| `101`  | NOT       | `~A`        |
-| `110`  | INC       | `A + 1`     |
-| `111`  | DEC       | `A - 1`     |
+### Opcode Table
+
+| Opcode | Operation | Description     |
+|--------|-----------|-----------------|
+| `0000` | ADD       | `A + B`         |
+| `0001` | SUBB      | `A - B - Cin`   |
+| `0010` | AND       | `A & B`         |
+| `0011` | OR        | `A \| B`        |
+| `0100` | XOR       | `A ^ B`         |
+| `0101` | NOT       | `~A`            |
+| `0110` | NEG       | `-A`            |
+| `0111` | SHL       | `A << 1`        |
+| `1000` | SHR       | `A >> 1` (logical shift right) |
+| `1001` | SAR       | `A >>> 1` (arithmetic shift right) |
+| `1010` | INC       | `A + 1`         |
+| `1011` | DEC       | `A - 1`         |
+| `1100` | MUL       | `A * B`         |
+| `1101` | CMP       | Compare A & B   |
+
 
 
 ✅ Verified addition, subtraction, and logical operations.
@@ -85,9 +94,6 @@ tb_alu.v → Testbench
 
 ## 📌 Future Work
 
-- Extend ALU to support multiplication & division.
-
-- Implement on FPGA board and verify hardware output.
 
 - Integrate with larger CPU design for system-level testing.
 
