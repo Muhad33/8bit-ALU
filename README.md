@@ -35,8 +35,8 @@ A **testbench** was created for functional verification, and the design was simu
 
 Clone the repository:
 ```bash
-git clone https://github.com/Muhad33/8-bit-ALU-Verilog.git
-cd 8-bit-ALU-Verilog/src
+git clone https://github.com/Muhad33/8bit-ALU.git
+cd 8bit-ALU/src
 ```
 
 1.Open the files in your Verilog simulator (ModelSim / Xilinx / Cadence).
