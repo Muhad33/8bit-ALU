@@ -68,7 +68,9 @@ tb_alu.v → Testbench
 
 ✅ Waveforms confirm correct ALU functionality.
 
-📷 Example Simulation Waveform:
+## 📷 Example Simulation Waveform:
+ [Waveform](https://github.com/user-attachments/assets/e9aafef8-e992-43ac-9a50-ddea350707a6)
+ 
 
 ## 🎯 Skills Learned
 
