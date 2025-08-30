@@ -15,7 +15,7 @@ A **testbench** was created for functional verification, and the design was simu
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 ```bash
 8-bit-ALU-Verilog/
 │── src/              # Verilog source files
